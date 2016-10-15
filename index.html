@@ -7,7 +7,74 @@
 </head>
 
 <body>
+	<div id="wrapper">
+		<section class="top">
+			View music |
+			<a href="#">Add Music</a> |
+			<a href="#">Profile</a>
+		</section>
 
+		<!-- Left side -->
+		<section class="options">
+			<form>
+				<label for="slide">Song length:</label><br>
+				<input id="slide" type="range" name="songlength" min="0" max="10">
+				<div class="space">
+					<label>Artist:</label><br>
+					<select class="dropdown" id="artist" name="artist" img src="images/arrow.png">
+						<option>Options</option>
+						<option>Mogwai</option>
+						<option>Depeche Mode</option>
+						<option>Megadeth</option>
+						<option>Judas Priest</option>
+						<option>Pink Floyd</option>
+					</select><br>
+				</div>
+				<div class="space">
+					<label>Album:</label><br>
+					<select class="dropdown" id="album" name="album">
+						<option>Options</option>
+						<option>Rock Action</option>
+						<option>Some Great Reward</option>
+						<option>Rust in Peace</option>
+						<option>Painkiller</option>
+						<option>The Wall</option>
+					</select><br>
+				</div>
+				<div class="space">
+					<label>Genre:</label>
+					<ul>
+						<li>
+							<input class="genre" type="checkbox" id="rock" name="genre">
+							<label for="rock">Rock</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="pop" name="genre">
+							<label for="pop">Pop</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="blues" name="genre">
+							<label for="blues">Blues</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="classical" name="genre">
+							<label for="classical">Classical</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="jazz" name="genre">
+							<label for="jazz">Jazz</label>
+						</li>
+						<li>
+							<input class="genre" type="checkbox" id="hiphop" name="genre">
+							<label for="hiphop">Hip Hop</label>
+						</li>
+					</ul>
+				</div>
+				<br>
+				<button type="submit">Filter</button>
+			</form>
+		</section>
 
+		<!-- Rigth side -->
 </body>
 </html>
