@@ -1,0 +1,167 @@
+html {
+	font-family: sans-serif;
+	background-color: #E6E6E6;
+}
+
+
+#wrapper {
+	/* canvas to wrap the content on the page for positioning elements */
+	/* Add margin, set width, hide overflow */
+	background-color: white;
+	margin: 20px auto;
+	max-width: 1100px;
+	min-width: 1100px;
+	overflow: hidden;
+	width: 100%;
+	box-shadow: 4px 4px 14px -1px #a4acad;
+}
+
+
+nav {
+	/* Add padding for text */
+	/* Add margin to position element on canvas */
+	background-color: #FFB4B0;
+	border: 3px solid black;
+	padding: 19px;
+	margin: 25px 90px 15px 90px;	
+}
+
+.options, .songs {
+	/* Float the divs block elements left to get them next to each other
+	/* Add height & width */
+    float: left;
+    min-height: 450px;
+    max-height: 300px
+}
+
+.space {
+	/* Add some space between the interface componenets */
+	margin-top: 1em;
+}
+
+.songchoices {
+	margin-top: 8%;
+}
+
+.songnamefloat {
+	margin-right: 1.5em;
+	font-size: 1em;
+}
+
+/****** LEFT ******/
+
+.options {
+	background-color: #4DD7FA;
+	border: 3px solid black;
+	padding: 10px;
+	line-height: 30px;
+	margin-left: 90px;
+	width: 200px;
+	margin-bottom: 25px;
+}
+
+
+/****** RIGHT ******/
+
+.songs {
+	background-color: #FEFAC0;
+	border: 3px solid black;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	border: solid 1px #d94ea;
+	line-height: 2px;
+	margin-left: 15px;
+	width: 647px;
+}
+
+button {
+	background-color: #e6e6e6;
+	border: solid 3px black;
+	font-size: 1.1em;
+	border-radius: 5px;
+	width: 115px;
+	letter-spacing: -.03em;
+	margin-left: 44px;
+}
+
+select.dropdown {
+	border: 3px solid black;
+ 	color: black;
+ 	border-radius: 5px;
+ 	font-size: 16px;
+ 	padding: 2px;
+ 	width: 90%;
+ 	cursor: pointer;
+ 	background-size: 28px 37px; 
+ 	background-border: 3px;
+}
+
+.genre {
+	-webkit-appearance: none;  
+	width: 18px;
+	height: 18px;
+ 	border: 3px solid black;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: white;
+	margin-top: 6px;
+	float: left;
+}
+
+.genre:checked:after {
+	content: '✔';
+	font-size: 1.2em;
+	float: left;
+}
+
+h4 {
+	font-size: 1.9em;
+	font-weight: normal;
+	color: #785616;
+}
+
+ul {
+	column-count: 2;
+	margin-left: -2em;
+	margin-top: .1em;
+}
+
+li { 
+	list-style: none;
+	font-size: .9em;
+	height: 32px;
+	float: left;
+	margin-left: -.2em;
+}
+
+input[type=range] {
+	-webkit-appearance: none; 
+	width: 90%;
+ 	background: transparent; 
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+#slide::-webkit-slider-runnable-track {
+	-webkit-appearance: none;  
+	height: 12px;
+	cursor: pointer;
+	background: lightgrey;
+	border-radius: 10px;
+	border: 3px solid #010101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	width: 22px;
+	height: 22px;
+	margin-top: -8px;
+ 	border: 3px solid black;
+	cursor: pointer;
+	border-radius: 50px;	
+	background: white;
+}
+
