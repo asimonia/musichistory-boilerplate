@@ -15,10 +15,7 @@ songs.push('Fat Old Sun - by Pink Floyd on the album Atom Heart Mother');
 
 for (var i = 0; i < songs.length; i++) {
 	songs[i] = songs[i].replace(">", "-");
-	songs[i] = songs[i].replace(/\@/gi, "");
-	songs[i] = songs[i].replace(/\*/gi, "");
-	songs[i] = songs[i].replace(/\(/gi, "");
-	songs[i] = songs[i].replace(/\!/gi, "");
+	songs[i] = songs[i].replace(/\@|\*|\(|\!/g, "");
 	console.log(songs[i]);
 }
 
