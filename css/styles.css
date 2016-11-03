@@ -3,7 +3,6 @@ html {
 	background-color: #E6E6E6;
 }
 
-
 #wrapper {
 	/* canvas to wrap the content on the page for positioning elements */
 	/* Add margin, set width, hide overflow */
@@ -165,3 +164,15 @@ input[type=range]::-webkit-slider-thumb {
 	background: white;
 }
 
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.addForm {
+    margin-left: auto;
+    margin-right: auto;
+}

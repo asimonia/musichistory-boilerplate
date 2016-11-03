@@ -2,21 +2,31 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Music History</title>
-  <link rel="stylesheet" href="css/styles.css">
+	<meta charset="utf-8">
+	<title>Music History</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 	<div id="wrapper">
-		<nav>
-			View music |
-			<a href="#">Add Music</a> |
+		<nav id="home-view">
+			<a href="#">View music</a> |
+			<a id="link-add" href="#">Add Music</a> |
 			<a href="#">Profile</a>
 		</nav>
 
+		<nav id="add-view" class="hidden">
+			<a id="link-list" href="#">List music</a> |
+			Add Music
+		</nav>
+
+		<nav id="list-view" class="hidden">
+			List Music |
+			<a href="#">Add Music</a>
+		</nav>
+
 		<!-- Left side -->
-		<section class="options">
+		<section id="left" class="options">
 			<form>
 				<label for="slide">Song length:</label><br>
 				<input id="slide" type="range" name="songlength" min="0" max="10">
@@ -77,7 +87,7 @@
 		</section>
 
 		<!-- Rigth side -->
-		<section class="songs">
+		<section id="right" class="songs">
 			<h4 id="name0" class="songchoices">Blasphemous Rumors</h4>
 			<ul>
 				<li id="artist0" class="songnamefloat">Depeche Mode</li>
@@ -111,7 +121,15 @@
 				<li class="songnamefloat">Rock</li>
 			</ul>
 		</section>
+
+		<section id="addForm" class="addForm hidden">
+			<label for="songname">Song name:<input type="text" value="" name="songnameid" size="30"><br />
+			<label for="arist">Artist:<input type="text" value="" name="artistid" size="30"><br />
+			<label for="album">Album:<input type="text" value="" name="albumid" size="30"><br />
+			<button>Add</button>
+		</section>
 	</div>
+	<script type="text/javascript" src="scripts/add.js"></script>
 	<script type="text/javascript" src="scripts/js-101.js"></script>
 </body>
 </html>
